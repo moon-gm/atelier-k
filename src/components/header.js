@@ -1,30 +1,25 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Styles from "../sass/header.module.scss"
 
 const Header = ({ siteTitle }) => (
+  // ヘッダーエリア
   <header
-    style={{
-      background: `blue`,
-      marginBottom: `1.45rem`,
-    }}
+    className={ Styles.headerArea }
   >
+    {/* コンテンツフレーム */}
     <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+      className={ Styles.frameZone }
     >
-      <h1 style={{ margin: 0 }}>
+      {/* タイトルテキスト */}
+      <h1 className={ Styles.titleText }>
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+          className={ Styles.link }
         >
-          {siteTitle}
+          {/* gatsby-config.jsで定義(layout.jsで呼び出している) */}
+          { siteTitle }
         </Link>
       </h1>
     </div>

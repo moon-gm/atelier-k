@@ -4,5 +4,5 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
-import './src/sass/style.scss'
+// ResetCSS
+import './src/sass/reset.scss'
