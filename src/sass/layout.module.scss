@@ -1,5 +1,12 @@
-.main-frame {
+.contents-area {
+
+}
+.frame-zone {
     margin: 0 auto;
     max-width: 960px;
-    padding: 20px 15px;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-around;
 }

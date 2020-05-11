@@ -28,12 +28,13 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={ data.site.siteMetadata.title } />
-      <div
-        className={ Styles.mainFrame }
-      >
-        <main>{ children }</main>
+      <div className={ Styles.contentsArea }>
+        <div className={ Styles.frameZone + ' ' + Styles.flexBox }>
+          <main style={{width: 70+'%'}}>{ children }</main>
+          <aside style={{width: 30+'%'}}>{ children }</aside>
+        </div>
       </div>
-      <Footer siteFooter={ data.site.siteMetadata.footer }/>
+      <Footer siteFooter={ data.site.siteMetadata.footer } />
     </>
   )
 }
