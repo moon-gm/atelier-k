@@ -4,7 +4,7 @@ import React from "react"
 import Styles from "../sass/header.module.scss"
 
 const Header = ({ siteTitle }) => (
-  // ヘッダーエリア
+  // 1:ヘッダーエリア
   <header
     className={ Styles.headerArea }
   >

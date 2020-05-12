@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
+import Aside from "./aside"
 import Styles from "../sass/layout.module.scss"
 
 const Layout = ({ children }) => {
@@ -27,13 +28,27 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      {/* 1:ヘッダーエリア */}
       <Header siteTitle={ data.site.siteMetadata.title } />
+
+      {/* 2:コンテンツエリア */}
       <div className={ Styles.contentsArea }>
         <div className={ Styles.frameZone + ' ' + Styles.flexBox }>
-          <main style={{width: 70+'%'}}>{ children }</main>
-          <aside style={{width: 30+'%'}}>{ children }</aside>
+          {/* 2-1:メインエリア */}
+          <main className={ Styles.mainArea }>
+            <div className={ Styles.contentsFrame }>
+              { children }
+            </div>
+          </main>
+          {/* 2-2:サイドエリア */}
+          <Aside
+            asideArea={ Styles.asideArea }
+            contentsFrame={ Styles.contentsFrame }
+          />
         </div>
       </div>
+
+      {/* 3:フッターエリア */}
       <Footer siteFooter={ data.site.siteMetadata.footer } />
     </>
   )

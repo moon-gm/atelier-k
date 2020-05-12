@@ -4,7 +4,7 @@ import React from "react"
 import Styles from "../sass/footer.module.scss"
 
 const Footer = ({ siteFooter }) => (
-  // フッターエリア
+  // 3:フッターエリア
   <footer
     className={Styles.footerArea}
   >

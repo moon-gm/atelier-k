@@ -1,12 +1,33 @@
+/* レイアウトのモジュール */
+// 2:コンテンツエリア
 .contents-area {
-
+    background: beige;
 }
+
+// コンテンツフレーム
 .frame-zone {
     margin: 0 auto;
     max-width: 960px;
 }
 
+// フレックス設定
 .flex-box {
     display: flex;
     justify-content: space-around;
+}
+
+// 2-1:メインエリア
+.main-area {
+    width: 70%;
+    border-right: 1px solid blue;
+}
+
+// 2-2:サイドエリア
+.aside-area {
+    width: 30%;
+}
+
+// エリア内コンテンツフレーム
+.contents-frame {
+    padding: 20px;
 }

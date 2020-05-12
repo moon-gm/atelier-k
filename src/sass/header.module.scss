@@ -1,18 +1,22 @@
-// ヘッダーのデザインモジュール
+/* ヘッダーのモジュール */
+// 1:ヘッダーエリア
 .header-area {
     background: blue;
 }
 
+// コンテンツフレーム
 .frame-zone {
     margin: 0 auto;
     max-width: 960px;
     padding: 20px 15px;
 }
 
+// 表示文字設定
 .title-text {
     text-align: center;
 }
 
+// リンク設定
 .link {
     color: white;
     text-decoration: none;
