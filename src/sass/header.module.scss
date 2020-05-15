@@ -2,6 +2,9 @@
 // 1:ヘッダーエリア
 .header-area {
     background: blue;
+    img {
+        width: 100%;
+    }
 }
 
 // コンテンツフレーム
@@ -14,6 +17,8 @@
 // 表示文字設定
 .title-text {
     text-align: center;
+    font-size: 25px;
+    font-style: italic;
 }
 
 // リンク設定

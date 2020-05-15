@@ -23,6 +23,9 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+    <div>
+        <img src="../static/stamp/title.jpg" alt="header-image"></img>
+    </div>
   </header>
 )
 

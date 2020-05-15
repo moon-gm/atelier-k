@@ -21,7 +21,7 @@
 
 // 2-1:メインエリア
 .main-area {
-    width: 70%;
+    width: 80%;
     border-right: 1px solid blue;
     @media screen and (max-width: 768px) {
         width: 100%;
@@ -31,7 +31,7 @@
 
 // 2-2:サイドエリア
 .aside-area {
-    width: 30%;
+    width: 20%;
     @media screen and (max-width: 768px) {
         width: 100%;
         border-top: 1px solid blue;
