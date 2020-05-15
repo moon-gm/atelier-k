@@ -4,6 +4,10 @@
 
 }
 
+.side-box {
+
+}
+
 // コンテンツフレーム
 .frame-zone {
     margin: 0 auto;
@@ -18,6 +22,19 @@
 
 // リンク設定
 .link {
-    color: white;
+    color: blue;
     text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+// LINEアイコン設定
+.line-icon {
+    margin-bottom: 10px;
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+        max-width: 200px;
+    }
 }

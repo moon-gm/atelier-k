@@ -14,20 +14,32 @@
 .flex-box {
     display: flex;
     justify-content: space-around;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
 }
 
 // 2-1:メインエリア
 .main-area {
     width: 70%;
     border-right: 1px solid blue;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        border-right: none;
+    }
 }
 
 // 2-2:サイドエリア
 .aside-area {
     width: 30%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        border-top: 1px solid blue;
+    }
 }
 
 // エリア内コンテンツフレーム
 .contents-frame {
     padding: 20px;
+    text-align: center;
 }
