@@ -15,7 +15,9 @@ const Footer = ({ siteFooter }) => (
       {/* タイトルテキスト */}
       <h1 className={Styles.titleText}>
         <Link
-          to=""
+          to={
+            `${ process.env.APP_NAME }` !== null ? `${ process.env.APP_NAME }#top` : "#top"
+        }
           className={Styles.link}
         >
           {/* gatsby-config.jsで定義(layout.jsで呼び出している) */}

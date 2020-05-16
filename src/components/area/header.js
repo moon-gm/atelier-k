@@ -8,6 +8,7 @@ const Header = ({ siteTitle }) => (
     // 1:ヘッダーエリア
     <header
         className={ Styles.headerArea }
+        id="top"
     >
         {/* コンテンツフレーム */}
         <div
@@ -18,7 +19,9 @@ const Header = ({ siteTitle }) => (
                 className={ Styles.titleText }
             >
                 <Link
-                    to="/"
+                    to={
+                        `${ process.env.APP_NAME }` !== null ? `${ process.env.APP_NAME }/` : "/"
+                    }
                     className={ Styles.link }
                 >
                     {/* gatsby-config.jsで定義(layout.jsで呼び出している) */}
