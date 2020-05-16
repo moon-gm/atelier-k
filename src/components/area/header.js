@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Img from "../parts/image"
 import Styles from "../../sass/module/area/header.module.scss"
 
 const Header = ({ siteTitle }) => (
@@ -29,10 +30,7 @@ const Header = ({ siteTitle }) => (
         <div
             className={ Styles.imgArea }
         >
-            <img
-                src="../static/stamp/title.jpg"
-                alt="eye-catch"
-             />
+            <Img fileName="title.jpg" />
         </div>
     </header>
 )

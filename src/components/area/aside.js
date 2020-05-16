@@ -2,18 +2,14 @@ import PropTypes from "prop-types"
 import React from "react"
 import Styles from "../../sass/module/area/contents-aside.module.scss"
 import asideConfig from "../../config/config_aside.js"
+import Img from "../parts/image"
 
 const Aside = ({ asideArea, contentsFrame }) => (
     // 2-2:サイドエリア
     <aside className={ asideArea }>
         {/* コンテンツフレーム */}
         <div className={ contentsFrame }>
-            <p>
-                <img
-                    src="../static/stamp/line-icon.png"
-                    alt="line-icon"
-                />
-            </p>
+            <Img fileName="line-icon.png" />
             <p>
                 くうちゃんLINEスタンプ各種販売中！
             </p>
@@ -26,11 +22,7 @@ const Aside = ({ asideArea, contentsFrame }) => (
                         >
                             {/* スタンプ画像 */}
                             <p className={ Styles.lineIcon }>
-                                <img
-                                    src={ item.srcImg }
-                                    alt={ item.altImg }
-                                >
-                                </img>
+                                <Img fileName={ item.srcImg } />
                             </p>
                             {/* スタンプタイトル */}
                             <p>
