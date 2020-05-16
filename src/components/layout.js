@@ -8,10 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "./header"
-import Navigation from "./navigation"
-import Aside from "./aside"
-import Footer from "./footer"
+import Header from "./area/header"
+import Navigation from "./area/navigation"
+import Aside from "./area/aside"
+import Footer from "./area/footer"
 import Styles from "../sass/layout.module.scss"
 
 const Layout = ({ children }) => {

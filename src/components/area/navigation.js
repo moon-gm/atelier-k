@@ -1,8 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
-import NavBtn from "./nav-btn"
-import navBtnConfig from "../config/config_nav-btn.js"
-import Styles from "../sass/navigation.module.scss"
+import NavBtn from "../parts/nav-btn"
+import navBtnConfig from "../../config/config_nav-btn.js"
+import Styles from "../../sass/module/area/navigation.module.scss"
 
 const Navigation = () => (
     // 1.5:ナビゲーションーエリア

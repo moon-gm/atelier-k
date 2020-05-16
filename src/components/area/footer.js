@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Styles from "../sass/footer.module.scss"
+import Styles from "../../sass/module/area/footer.module.scss"
 
 const Footer = ({ siteFooter }) => (
   // 3:フッターエリア

@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import Styles from "../sass/navigation.module.scss"
+import Styles from "../../sass/module/area/navigation.module.scss"
 
 const NavBtn = ({ linkText, linkTo }) => (
     // ナビゲーションボタン

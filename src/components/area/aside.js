@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
-import Styles from "../sass/contents-aside.module.scss"
-import asideConfig from "../config/config_aside.js"
+import Styles from "../../sass/module/area/contents-aside.module.scss"
+import asideConfig from "../../config/config_aside.js"
 
 const Aside = ({ asideArea, contentsFrame }) => (
     // 2-2:サイドエリア
