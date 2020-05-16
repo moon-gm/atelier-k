@@ -4,29 +4,36 @@ import React from "react"
 import Styles from "../sass/header.module.scss"
 
 const Header = ({ siteTitle }) => (
-  // 1:ヘッダーエリア
-  <header
-    className={ Styles.headerArea }
-  >
-    {/* コンテンツフレーム */}
-    <div
-      className={ Styles.frameZone }
+    // 1:ヘッダーエリア
+    <header
+        className={ Styles.headerArea }
     >
-      {/* タイトルテキスト */}
-      <h1 className={ Styles.titleText }>
-        <Link
-          to="/"
-          className={ Styles.link }
+        {/* コンテンツフレーム */}
+        <div
+            className={ Styles.frameZone }
         >
-          {/* gatsby-config.jsで定義(layout.jsで呼び出している) */}
-          { siteTitle }
-        </Link>
-      </h1>
-    </div>
-    <div>
-        <img src="../static/stamp/title.jpg" alt="header-image"></img>
-    </div>
-  </header>
+            {/* タイトルテキスト */}
+            <h1
+                className={ Styles.titleText }
+            >
+                <Link
+                    to="/"
+                    className={ Styles.link }
+                >
+                    {/* gatsby-config.jsで定義(layout.jsで呼び出している) */}
+                    { siteTitle }
+                </Link>
+            </h1>
+        </div>
+        <div
+            className={ Styles.imgArea }
+        >
+            <img
+                src="../static/stamp/title.jpg"
+                alt="header-image"
+             />
+        </div>
+    </header>
 )
 
 Header.propTypes = {

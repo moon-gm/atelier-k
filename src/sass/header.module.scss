@@ -1,9 +1,16 @@
 /* ヘッダーのモジュール */
 // 1:ヘッダーエリア
 .header-area {
-    background: blue;
+    background: black;
+}
+
+.img-area {
+    width: 100%;
+    height: auto;
+    line-height: 0;
     img {
         width: 100%;
+        height: auto;
     }
 }
 

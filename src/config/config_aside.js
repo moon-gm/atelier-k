@@ -1,5 +1,5 @@
 // スタンプ一覧の設定
-const contentsTexts = [
+const asideContents = [
     {
         'srcImg': '../static/stamp/stamp-1.png',
         'altImg': 'くうちゃんスタンプ画像１',
@@ -43,4 +43,4 @@ const contentsTexts = [
         'url': 'https://store.line.me/stickershop/product/9738316',
     },
 ];
-export default contentsTexts
+export default asideContents

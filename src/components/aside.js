@@ -1,47 +1,52 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Styles from "../sass/contents-aside.module.scss"
-import asideConfig from "../config/aside-config"
+import asideConfig from "../config/config_aside.js"
 
 const Aside = ({ asideArea, contentsFrame }) => (
     // 2-2:サイドエリア
     <aside className={ asideArea }>
-    {/* コンテンツフレーム */}
-    <div className={ contentsFrame }>
-
-        <p>
-            <img src="../static/stamp/line-icon.png" alt="line-icon"></img>
-        </p>
-        <p>
-            くうちゃんLINEスタンプ各種販売中！
-        </p>
-            {
-                // スタンプ一覧をループで表示
-                asideConfig.map(item => { return (
-                    <div className={ Styles.sideBox } key={ item.srcImg }>
-                        {/* スタンプ画像 */}
-                        <p className={ Styles.lineIcon }>
-                            <img
-                                src={ item.srcImg }
-                                alt={ item.altImg }
-                            >
-                            </img>
-                        </p>
-                        {/* スタンプタイトル */}
-                        <p>
-                            <a
-                                className={ Styles.link }
-                                href={ item.url }
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                { item.textA }
-                            </a>
-                        </p>
-                    </div>
-                )})
-            }
-    </div>
+        {/* コンテンツフレーム */}
+        <div className={ contentsFrame }>
+            <p>
+                <img
+                    src="../static/stamp/line-icon.png"
+                    alt="line-icon"
+                />
+            </p>
+            <p>
+                くうちゃんLINEスタンプ各種販売中！
+            </p>
+                {
+                    // スタンプ一覧をループで表示
+                    asideConfig.map( item => { return (
+                        <div
+                            className={ Styles.sideBox }
+                            key={ item.srcImg }
+                        >
+                            {/* スタンプ画像 */}
+                            <p className={ Styles.lineIcon }>
+                                <img
+                                    src={ item.srcImg }
+                                    alt={ item.altImg }
+                                >
+                                </img>
+                            </p>
+                            {/* スタンプタイトル */}
+                            <p>
+                                <a
+                                    className={ Styles.link }
+                                    href={ item.url }
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    { item.textA }
+                                </a>
+                            </p>
+                        </div>
+                    )})
+                }
+        </div>
     </aside>
 )
 

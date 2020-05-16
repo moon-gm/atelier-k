@@ -1,13 +1,12 @@
 /* レイアウトのモジュール */
 // 2:コンテンツエリア
 .contents-area {
-    background: beige;
+    background: white;
 }
 
 // コンテンツフレーム
 .frame-zone {
     margin: 0 auto;
-    max-width: 960px;
 }
 
 // フレックス設定
@@ -22,7 +21,7 @@
 // 2-1:メインエリア
 .main-area {
     width: 80%;
-    border-right: 1px solid blue;
+    border-right: 1px solid black;
     @media screen and (max-width: 768px) {
         width: 100%;
         border-right: none;
@@ -34,7 +33,7 @@
     width: 20%;
     @media screen and (max-width: 768px) {
         width: 100%;
-        border-top: 1px solid blue;
+        border-top: 1px solid black;
     }
 }
 
