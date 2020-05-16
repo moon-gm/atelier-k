@@ -25,6 +25,7 @@ const Header = ({ siteTitle }) => (
                 </Link>
             </h1>
         </div>
+        {/* アイキャッチイメージ */}
         <div
             className={ Styles.imgArea }
         >
