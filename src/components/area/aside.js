@@ -21,9 +21,9 @@ const Aside = ({ asideArea, contentsFrame }) => (
                             key={ item.srcImg }
                         >
                             {/* スタンプ画像 */}
-                            <p className={ Styles.lineIcon }>
+                            <div className={ Styles.lineIcon }>
                                 <Img fileName={ item.srcImg } />
-                            </p>
+                            </div>
                             {/* スタンプタイトル */}
                             <p>
                                 <a
