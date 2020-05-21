@@ -8,3 +8,5 @@
 import './src/sass/reset.scss'
 // 初期設定CSS
 import './src/sass/style.scss'
+// レイアウト設定
+import './src/sass/layout.scss'

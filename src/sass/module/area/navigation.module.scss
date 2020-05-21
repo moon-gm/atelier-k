@@ -18,15 +18,6 @@
     text-align: center;
 }
 
-// フレックス設定
-.flex-box {
-    display: flex;
-    justify-content: space-around;
-    @media screen and (max-width: $sp-max-width) {
-        display: block;
-    }
-}
-
 // 表示文字設定
 .text-color {
     color: $white;

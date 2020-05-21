@@ -11,7 +11,7 @@ const Navigation = () => (
     >
         {/* コンテンツフレーム */}
         <div
-            className={ Styles.frameZone + ' ' + Styles.flexBox }
+            className={ Styles.frameZone + ' ' + "flex-box" }
         >
             <div
                 className={ Styles.textColor + ' ' + Styles.btnStyle }

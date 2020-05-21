@@ -12,7 +12,6 @@ import Header from "./area/header"
 import Navigation from "./area/navigation"
 import Aside from "./area/aside"
 import Footer from "./area/footer"
-import Styles from "../sass/layout.module.scss"
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -35,18 +34,18 @@ const Layout = ({ children }) => {
             <Navigation />
 
             {/* 2:コンテンツエリア */}
-            <div className={ Styles.contentsArea }>
-                <div className={ Styles.frameZone + ' ' + Styles.flexBox }>
+            <div className="contents-area">
+                <div className="frame-zone flex-box">
                     {/* 2-1:メインエリア */}
-                    <main className={ Styles.mainArea }>
-                        <div className={ Styles.contentsFrame }>
+                    <main className="main-area">
+                        <div className="contents-frame">
                             { children }
                         </div>
                     </main>
                     {/* 2-2:サイドエリア */}
                     <Aside
-                        asideArea={ Styles.asideArea }
-                        contentsFrame={ Styles.contentsFrame }
+                        asideArea="aside-area"
+                        contentsFrame="contents-frame"
                     />
                 </div>
             </div>
