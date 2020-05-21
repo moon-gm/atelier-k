@@ -10,19 +10,19 @@ export default [
         },
         {
             'month': 'January',
-            'fileName': 'stamp-1.png',
+            'fileName': 'stamp-2.png',
             'altName': 'くうちゃんスタンプ画像１',
             'comment': 'part.1 うさぎかぶり',
         },
         {
             'month': 'January',
-            'fileName': 'stamp-1.png',
+            'fileName': 'stamp-3.png',
             'altName': 'くうちゃんスタンプ画像１',
             'comment': 'part.1 うさぎかぶり',
         },
         {
             'month': 'January',
-            'fileName': 'stamp-1.png',
+            'fileName': 'stamp-4.png',
             'altName': 'くうちゃんスタンプ画像１',
             'comment': 'part.1 うさぎかぶり',
         },

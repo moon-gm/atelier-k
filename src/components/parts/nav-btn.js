@@ -9,7 +9,7 @@ const NavBtn = ({ linkText, linkTo }) => (
     >
         <Link
             to={
-                `${ process.env.APP_NAME }` !== null ? `${ process.env.APP_NAME }/${ linkTo }/` : linkTo
+                `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/${ linkTo }/` : linkTo
             }
             className={ Styles.link }
         >

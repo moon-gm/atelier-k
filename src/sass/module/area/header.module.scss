@@ -2,6 +2,9 @@
 // 1:ヘッダーエリア
 .header-area {
     background: black;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
 }
 
 .img-area {
@@ -23,9 +26,12 @@
 
 // 表示文字設定
 .title-text {
-    text-align: center;
-    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
     font-style: italic;
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
+    }
 }
 
 // リンク設定

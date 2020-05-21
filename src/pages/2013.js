@@ -12,7 +12,7 @@ const Gallery2013 = () => (
     <h1
         className={ Styles.title }
     >
-        〜 Gallery 2013 〜
+        Gallery 2013
     </h1>
     { /* ループでコンテナを作成 */
         /* 月単位のループ */
@@ -38,20 +38,26 @@ const Gallery2013 = () => (
                             <div
                                 className={ Styles.contentsContainer }
                             >
-                                {/* 画像コンテンツ */}
-                                <div
-                                    className={ Styles.imageContents }
+                                <Link
+                                    to={
+                                        `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images/${ contents.fileName }` : `src/images/${ contents.fileName }`
+                                    }
                                 >
-                                    <Img fileName={ contents.fileName } />
-                                </div>
-                                {/*  テキストコンテンツ */}
-                                <div
-                                    className={ Styles.textContents }
-                                >
-                                    <p>
-                                        { contents.comment }
-                                    </p>
-                                </div>
+                                    {/* 画像コンテンツ */}
+                                    <div
+                                        className={ Styles.imageContents }
+                                    >
+                                        <Img fileName={ contents.fileName } />
+                                    </div>
+                                    {/*  テキストコンテンツ */}
+                                    <div
+                                        className={ Styles.textContents }
+                                    >
+                                        <p>
+                                            { contents.comment }
+                                        </p>
+                                    </div>
+                                </Link>
                             </div>
                         )})
                     }

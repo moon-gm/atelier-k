@@ -9,10 +9,14 @@ const Aside = ({ asideArea, contentsFrame }) => (
     <aside className={ asideArea }>
         {/* コンテンツフレーム */}
         <div className={ contentsFrame }>
-            <Img fileName="line-icon.png" />
-            <p>
-                くうちゃんLINEスタンプ各種販売中！
-            </p>
+            <div
+                className={ Styles.sideBox }
+            >
+                <Img fileName="line-icon.png" />
+                <p>
+                    Kuh's LINE Stamps Now on Sale！
+                </p>
+            </div>
                 {
                     // スタンプ一覧をループで表示
                     asideConfig.map( item => { return (
@@ -20,21 +24,21 @@ const Aside = ({ asideArea, contentsFrame }) => (
                             className={ Styles.sideBox }
                             key={ item.srcImg }
                         >
-                            {/* スタンプ画像 */}
-                            <div className={ Styles.lineIcon }>
-                                <Img fileName={ item.srcImg } />
-                            </div>
-                            {/* スタンプタイトル */}
-                            <p>
-                                <a
-                                    className={ Styles.link }
-                                    href={ item.url }
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
+                            <a
+                                className={ Styles.link }
+                                href={ item.url }
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {/* スタンプ画像 */}
+                                <div className={ Styles.lineIcon }>
+                                    <Img fileName={ item.srcImg } />
+                                </div>
+                                {/* スタンプタイトル */}
+                                <p>
                                     { item.textA }
-                                </a>
-                            </p>
+                                </p>
+                            </a>
                         </div>
                     )})
                 }

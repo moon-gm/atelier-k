@@ -1,7 +1,13 @@
 /* ナビゲーションのモジュール */
 // 1.5:ナビゲーションエリア
 .nav-area {
+    font-family: 'Lobster', cursive;
     background: black;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 90px;
+    left: 0;
 }
 
 // コンテンツフレーム
@@ -43,4 +49,10 @@
     p {
         padding: 10px;
     }
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
+
+
+

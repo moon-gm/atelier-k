@@ -1,11 +1,16 @@
 /* レイアウトのモジュール */
 // 2:コンテンツエリア
 .contents-area {
-    background: white;
+    background-image: url(../images/bg-penki.png);
+    padding-top: 125px;
+    @media screen and (max-width: 768px) {
+        padding-top: 70px;
+    }
 }
 
 // コンテンツフレーム
 .frame-zone {
+    background: rgba(255, 255, 255, 0.8);
     margin: 0 auto;
 }
 

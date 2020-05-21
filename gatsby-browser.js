@@ -6,3 +6,5 @@
 
 // ResetCSS
 import './src/sass/reset.scss'
+// 初期設定CSS
+import './src/sass/style.scss'

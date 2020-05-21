@@ -1,6 +1,7 @@
 /** Gallery画面共通 **/
 // メインの見出し
 .title {
+    font-family: 'Lobster', cursive;
     font-size: 40px;
     padding-top: 20px;
     margin-bottom: 40px;
@@ -22,6 +23,8 @@
 
 // 月のタイトル設定
 .month-title {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
     padding-bottom: 5px;
     padding-left: 5px;
 }
@@ -41,7 +44,13 @@
 .contents-container {
     width: 200px;
     margin-bottom: 20px;
+    padding-right: 20px;
     @media screen and (max-width: 768px) {
         margin: 0 auto 20px auto;
+        padding-right: 0;
     }
+}
+
+.image-contents {
+    margin-bottom: 20px;
 }

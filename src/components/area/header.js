@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Img from "../parts/image"
 import Styles from "../../sass/module/area/header.module.scss"
 
 const Header = ({ siteTitle }) => (
@@ -20,7 +19,7 @@ const Header = ({ siteTitle }) => (
             >
                 <Link
                     to={
-                        `${ process.env.APP_NAME }` !== null ? `${ process.env.APP_NAME }/` : "/"
+                        `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/` : "/"
                     }
                     className={ Styles.link }
                 >
@@ -28,12 +27,6 @@ const Header = ({ siteTitle }) => (
                     { siteTitle }
                 </Link>
             </h1>
-        </div>
-        {/* アイキャッチイメージ */}
-        <div
-            className={ Styles.imgArea }
-        >
-            <Img fileName="title.jpg" />
         </div>
     </header>
 )
