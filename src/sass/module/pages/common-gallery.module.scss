@@ -1,6 +1,47 @@
-// Gallery画面共通
+/** Gallery画面共通 **/
+// メインの見出し
 .title {
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    padding-top: 20px;
+    margin-bottom: 40px;
     text-align: center;
+    @media screen and (max-width: 768px) {
+        font-size: 25px;
+        padding-top: 0;
+    }
+}
+
+// フレックス設定
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+
+// 月のタイトル設定
+.month-title {
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+// 月単位のコンテナ
+.month-container {
+    padding-top: 20px;
+    padding-left: 120px;
+    margin-bottom: 20px;
+    border-top: 1px solid black;
+    @media screen and (max-width: 768px) {
+        padding-left: 0;
+    }
+}
+
+// コンテンツ単位のコンテナ
+.contents-container {
+    width: 200px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+        margin: 0 auto 20px auto;
+    }
 }
