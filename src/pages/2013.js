@@ -31,7 +31,7 @@ const Gallery2013 = () => (
 
                 {/* フレックスコンテナ */}
                 <div
-                    className={ Styles.monthContainer + ' ' + Styles.flexBox }
+                    className={ Styles.monthContainer + ' ' + "flex-box" + ' ' + Styles.flexWrap }
                 >
                     { /* コンテンツ単位のループ */
                         month.map( contents => { return (

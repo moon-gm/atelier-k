@@ -15,12 +15,8 @@
 }
 
 // フレックス設定
-.flex-box {
-    display: flex;
+.flex-wrap {
     flex-wrap: wrap;
-    @media screen and (max-width: $sp-max-width) {
-        display: block;
-    }
 }
 
 // 月のタイトル設定
