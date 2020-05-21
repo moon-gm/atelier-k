@@ -3,7 +3,7 @@
 
 // 1.5:ナビゲーションエリア
 .nav-area {
-    font-family: 'Lobster', cursive;
+    @include fontLobster;
     background: $black;
     width: 100%;
     z-index: 100;

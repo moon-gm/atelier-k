@@ -3,7 +3,7 @@
 
 // メインの見出し
 .title {
-    font-family: 'Lobster', cursive;
+    @include fontLobster;
     font-size: 40px;
     padding-top: 20px;
     margin-bottom: 40px;
@@ -25,7 +25,7 @@
 
 // 月のタイトル設定
 .month-title {
-    font-family: 'Lobster', cursive;
+    @include fontLobster;
     font-size: 20px;
     padding-bottom: 5px;
     padding-left: 5px;

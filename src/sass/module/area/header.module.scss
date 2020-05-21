@@ -3,6 +3,7 @@
 
 // 1:ヘッダーエリア
 .header-area {
+    @include fontLobster;
     background: $black;
     width: 100%;
     z-index: 100;
@@ -28,7 +29,6 @@
 
 // 表示文字設定
 .title-text {
-    font-family: 'Lobster', cursive;
     font-size: 50px;
     font-style: italic;
     @media screen and (max-width: $sp-max-width) {
