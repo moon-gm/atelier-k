@@ -23,8 +23,8 @@
 // コンテンツフレーム
 .frame-zone {
     margin: 0 auto;
-    max-width: 960px;
     padding: 20px 15px;
+    padding-left: 40px;
 }
 
 // 表示文字設定
@@ -39,5 +39,4 @@
 // リンク設定
 .link {
     color: $white;
-    text-decoration: none;
 }
