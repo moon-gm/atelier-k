@@ -1,8 +1,10 @@
 /* ナビゲーションのモジュール */
+@import '../../variable';
+
 // 1.5:ナビゲーションエリア
 .nav-area {
     font-family: 'Lobster', cursive;
-    background: black;
+    background: $black;
     width: 100%;
     z-index: 100;
     position: fixed;
@@ -20,19 +22,19 @@
 .flex-box {
     display: flex;
     justify-content: space-around;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $sp-max-width) {
         display: block;
     }
 }
 
 // 表示文字設定
 .text-color {
-    color: white;
+    color: $white;
 }
 
 // リンク設定
 .link {
-    color: white;
+    color: $white;
     text-decoration: none;
 }
 
@@ -43,13 +45,13 @@
         display: block;
         padding: 10px;
         &:hover {
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: $white-skelton;
         }
     }
     p {
         padding: 10px;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $sp-max-width) {
         display: none;
     }
 }

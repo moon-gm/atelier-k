@@ -1,4 +1,6 @@
 /** Gallery画面共通 **/
+@import '../../variable';
+
 // メインの見出し
 .title {
     font-family: 'Lobster', cursive;
@@ -6,7 +8,7 @@
     padding-top: 20px;
     margin-bottom: 40px;
     text-align: center;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $sp-max-width) {
         font-size: 25px;
         padding-top: 0;
     }
@@ -16,7 +18,7 @@
 .flex-box {
     display: flex;
     flex-wrap: wrap;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $sp-max-width) {
         display: block;
     }
 }
@@ -34,8 +36,8 @@
     padding-top: 20px;
     padding-left: 120px;
     margin-bottom: 20px;
-    border-top: 1px solid black;
-    @media screen and (max-width: 768px) {
+    border-top: 1px solid $black;
+    @media screen and (max-width: $sp-max-width) {
         padding-left: 0;
     }
 }
@@ -45,7 +47,7 @@
     width: 200px;
     margin-bottom: 20px;
     padding-right: 20px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $sp-max-width) {
         margin: 0 auto 20px auto;
         padding-right: 0;
     }

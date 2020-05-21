@@ -1,8 +1,16 @@
 /* フッターのモジュール */
+@import '../../variable';
+
 // 3:フッターエリア
 .footer-area {
-    background: black;
+    background: $black;
     font-family: 'Lobster', cursive;
+    @media screen and (max-width: $sp-max-width) {
+        background: $black-skelton;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
 }
 
 // コンテンツフレーム
@@ -19,6 +27,6 @@
 
 // リンク設定
 .link {
-    color: white;
+    color: $white;
     text-decoration: none;
 }

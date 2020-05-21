@@ -1,16 +1,18 @@
 /* レイアウトのモジュール */
+@import 'variable';
+
 // 2:コンテンツエリア
 .contents-area {
     background-image: url(../images/bg-penki.png);
     padding-top: 125px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $sp-max-width) {
         padding-top: 70px;
     }
 }
 
 // コンテンツフレーム
 .frame-zone {
-    background: rgba(255, 255, 255, 0.8);
+    background: $white-skelton;
     margin: 0 auto;
 }
 
@@ -18,7 +20,7 @@
 .flex-box {
     display: flex;
     justify-content: space-around;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $sp-max-width) {
         display: block;
     }
 }
@@ -26,8 +28,8 @@
 // 2-1:メインエリア
 .main-area {
     width: 85%;
-    border-right: 1px solid black;
-    @media screen and (max-width: 768px) {
+    border-right: 1px solid $black;
+    @media screen and (max-width: $sp-max-width) {
         width: 100%;
         border-right: none;
     }
@@ -36,9 +38,9 @@
 // 2-2:サイドエリア
 .aside-area {
     width: 15%;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $sp-max-width) {
         width: 100%;
-        border-top: 1px solid black;
+        border-top: 1px solid $black;
     }
 }
 

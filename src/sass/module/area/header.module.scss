@@ -1,7 +1,9 @@
 /* ヘッダーのモジュール */
+@import '../../variable';
+
 // 1:ヘッダーエリア
 .header-area {
-    background: black;
+    background: $black;
     width: 100%;
     z-index: 100;
     position: fixed;
@@ -29,13 +31,13 @@
     font-family: 'Lobster', cursive;
     font-size: 50px;
     font-style: italic;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $sp-max-width) {
         font-size: 30px;
     }
 }
 
 // リンク設定
 .link {
-    color: white;
+    color: $white;
     text-decoration: none;
 }

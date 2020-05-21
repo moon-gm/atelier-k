@@ -38,10 +38,11 @@ const Gallery2013 = () => (
                             <div
                                 className={ Styles.contentsContainer }
                             >
-                                <Link
-                                    to={
+                                <a
+                                    href={
                                         `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images/${ contents.fileName }` : `src/images/${ contents.fileName }`
                                     }
+                                    target="_blank"
                                 >
                                     {/* 画像コンテンツ */}
                                     <div
@@ -57,7 +58,7 @@ const Gallery2013 = () => (
                                             { contents.comment }
                                         </p>
                                     </div>
-                                </Link>
+                                </a>
                             </div>
                         )})
                     }
