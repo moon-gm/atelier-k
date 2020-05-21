@@ -1,18 +1,6 @@
 /* フッターのモジュール */
 @import '../../variable';
 
-// 3:フッターエリア
-.footer-area {
-    background: $black;
-    @include fontLobster;
-    @media screen and (max-width: $sp-max-width) {
-        background: $black-skelton;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-    }
-}
-
 // コンテンツフレーム
 .frame-zone {
     padding: 20px 15px;

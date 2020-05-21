@@ -4,10 +4,10 @@ import NavBtn from "../parts/nav-btn"
 import navBtnConfig from "../../config/config_nav-btn.js"
 import Styles from "../../sass/module/area/navigation.module.scss"
 
-const Navigation = () => (
+const Navigation = ({ className }) => (
     // 1.5:ナビゲーションーエリア
     <nav
-        className={ Styles.navArea }
+        className={ className }
     >
         {/* コンテンツフレーム */}
         <div

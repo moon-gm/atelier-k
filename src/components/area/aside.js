@@ -4,9 +4,9 @@ import Styles from "../../sass/module/area/contents-aside.module.scss"
 import asideConfig from "../../config/config_aside.js"
 import Img from "../parts/image"
 
-const Aside = ({ asideArea, contentsFrame }) => (
+const Aside = ({ className, contentsFrame }) => (
     // 2-2:サイドエリア
-    <aside className={ asideArea }>
+    <aside className={ className }>
         {/* コンテンツフレーム */}
         <div className={ contentsFrame }>
             <div

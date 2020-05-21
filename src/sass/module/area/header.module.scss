@@ -1,15 +1,6 @@
 /* ヘッダーのモジュール */
 @import '../../variable';
 
-// 1:ヘッダーエリア
-.header-area {
-    @include fontLobster;
-    background: $black;
-    width: 100%;
-    z-index: 100;
-    position: fixed;
-}
-
 .img-area {
     width: 100%;
     height: auto;

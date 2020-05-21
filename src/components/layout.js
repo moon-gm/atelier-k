@@ -28,30 +28,38 @@ const Layout = ({ children }) => {
     return (
         <>
             {/* 1:ヘッダーエリア */}
-            <Header siteTitle={ data.site.siteMetadata.title } />
+            <Header
+                className="header-area"
+                siteTitle={ data.site.siteMetadata.title }
+            />
 
-            {/* 1.5:ナビゲーションエリア */}
-            <Navigation />
+            {/* 2:ナビゲーションエリア */}
+            <Navigation
+                className="nav-area"
+            />
 
-            {/* 2:コンテンツエリア */}
+            {/* 3:コンテンツエリア */}
             <div className="contents-area">
                 <div className="frame-zone flex-box">
-                    {/* 2-1:メインエリア */}
+                    {/* 3-1:メインエリア */}
                     <main className="main-area">
-                        <div className="contents-frame">
+                        <div className="contents-frame contents-frame__main-area">
                             { children }
                         </div>
                     </main>
-                    {/* 2-2:サイドエリア */}
+                    {/* 3-2:サイドエリア */}
                     <Aside
-                        asideArea="aside-area"
-                        contentsFrame="contents-frame"
+                        className="aside-area"
+                        contentsFrame="contents-frame contents-frame__aside-area"
                     />
                 </div>
             </div>
 
-            {/* 3:フッターエリア */}
-            <Footer siteFooter={ data.site.siteMetadata.footer } />
+            {/* 4:フッターエリア */}
+            <Footer
+                className="footer-area"
+                siteFooter={ data.site.siteMetadata.footer }
+            />
         </>
     )
 }

@@ -1,7 +1,27 @@
 /* レイアウトのモジュール */
 @import 'variable';
 
-// 2:コンテンツエリア
+// 1:ヘッダーエリア
+.header-area {
+    @include fontLobster;
+    background: $black;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
+// 2:ナビゲーションエリア
+.nav-area {
+    @include fontLobster;
+    background: $black;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 90px;
+    left: 0;
+}
+
+// 3:コンテンツエリア
 .contents-area {
     background-image: url(../images/bg-penki.png);
     padding-top: 125px;
@@ -25,7 +45,7 @@
     }
 }
 
-// 2-1:メインエリア
+// 3-1:メインエリア
 .main-area {
     width: 85%;
     border-right: 1px solid $black;
@@ -35,7 +55,7 @@
     }
 }
 
-// 2-2:サイドエリア
+// 3-2:サイドエリア
 .aside-area {
     width: 15%;
     @media screen and (max-width: $sp-max-width) {
@@ -47,4 +67,16 @@
 // エリア内コンテンツフレーム
 .contents-frame {
     padding: 20px;
+}
+
+// 4:フッターエリア
+.footer-area {
+    background: $black;
+    @include fontLobster;
+    @media screen and (max-width: $sp-max-width) {
+        background: $black-skelton;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
 }

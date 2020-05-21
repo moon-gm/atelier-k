@@ -1,17 +1,6 @@
 /* ナビゲーションのモジュール */
 @import '../../variable';
 
-// 1.5:ナビゲーションエリア
-.nav-area {
-    @include fontLobster;
-    background: $black;
-    width: 100%;
-    z-index: 100;
-    position: fixed;
-    top: 90px;
-    left: 0;
-}
-
 // コンテンツフレーム
 .frame-zone {
     margin: 0 auto;
