@@ -13,6 +13,7 @@ a {
     color: $black;
     text-decoration: none;
     img:hover {
-        background-color: $black-skelton;
+        border: 1px solid $black;
+        background: $black-skelton;
     }
 }

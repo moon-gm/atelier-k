@@ -9,3 +9,25 @@
         display: block;
     }
 }
+
+// h1レベル見出し設定
+.h1 {
+    @include fontLobster;
+    font-size: 40px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    @media screen and (max-width: $sp-max-width) {
+        font-size: 25px;
+        padding-top: 0;
+    }
+}
+
+// h2レベル見出し設定
+.h2 {
+    @include fontLobster;
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-bottom: 1px solid $black;
+}
