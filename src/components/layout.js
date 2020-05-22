@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
             {/* 2:ナビゲーションエリア */}
             <Navigation
                 classNav="nav-area"
-                classNavFrame="nav-area-frame"
+                classNavFrame="nav-area-frame flex-box"
             />
 
             {/* 3:コンテンツエリア */}

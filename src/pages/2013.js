@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "../components/parts/image"
@@ -31,7 +30,7 @@ const Gallery2013 = () => (
 
                 {/* フレックスコンテナ */}
                 <div
-                    className={ Styles.monthContainer + ' ' + "flex-box" + ' ' + Styles.flexWrap }
+                    className={ `${ Styles.monthContainer } flex-box` }
                 >
                     { /* コンテンツ単位のループ */
                         month.map( contents => { return (
@@ -43,6 +42,7 @@ const Gallery2013 = () => (
                                         `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images/${ contents.fileName }` : `src/images/${ contents.fileName }`
                                     }
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     {/* 画像コンテンツ */}
                                     <div

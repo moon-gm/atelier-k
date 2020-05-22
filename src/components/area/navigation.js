@@ -11,7 +11,7 @@ const Navigation = ({ classNav, classNavFrame }) => (
     >
         {/* コンテンツフレーム */}
         <div
-            className={ classNavFrame + ' ' + "flex-box" }
+            className={ classNavFrame }
         >
             <div
                 className={ Styles.textColor + ' ' + Styles.btnStyle }

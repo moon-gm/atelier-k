@@ -14,11 +14,6 @@
     }
 }
 
-// フレックス設定
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
 // 月のタイトル設定
 .month-title {
     @include fontLobster;
@@ -33,6 +28,7 @@
     padding-left: 120px;
     margin-bottom: 20px;
     border-top: 1px solid $black;
+    flex-wrap: wrap;
     @media screen and (max-width: $sp-max-width) {
         padding-left: 0;
     }
