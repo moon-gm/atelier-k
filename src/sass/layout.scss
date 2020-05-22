@@ -12,6 +12,10 @@
     position: fixed;
     top: 0;
     left: 0;
+    @media screen and (max-width: $sp-max-width) {
+        width: 75%;
+        border-right: 1px solid $white-skelton;
+    }
 
     // コンテンツフレーム
     &-frame {
@@ -32,9 +36,10 @@
     z-index: $z-index-navigation;
     position: fixed;
     top: 105px;
-    left: 0;
     @media screen and (max-width: $sp-max-width) {
-        top: 79px;
+        width: 25%;
+        top: 39px;
+        right:0;
         text-align: center;
     }
 
@@ -69,7 +74,7 @@
                 @include fontLobster;
                 content: "LINE Stamps";
                 display: block;
-                background: $black;
+                background: $black-skelton;
                 color: $white;
                 text-align: center;
                 padding: 10px;
@@ -99,17 +104,24 @@
 // 4:フッターエリア
 .footer-area {
     @include fontLobster;
-    background: $black;
     background: $black-skelton;
     @media screen and (max-width: $sp-max-width) {
         position: fixed;
-        bottom: 0;
-        left: 0;
+        top: 0;
+        right: 0;
+        width: 25%;
+        z-index: $z-index-footer;
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+        border-bottom: 1px solid $white-skelton;
     }
 
     // コンテンツフレーム
     &-frame {
         padding: 20px 15px;
         background: $black-skelton;
+        @media screen and (max-width: $sp-max-width) {
+            padding: 10px;
+        }
     }
 }

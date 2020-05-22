@@ -11,7 +11,7 @@ const Navigation = ({ classNav, classNavFrame }) => (
 
             {/* ナビゲーションの見出し */}
             <div className={ Styles.btnStyle }>
-                <p className={ Styles.text }>
+                <p className={ Styles.texts }>
                     Gallery
                 </p>
             </div>
