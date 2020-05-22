@@ -1,4 +1,4 @@
-/** レイアウトのモジュール **/
+/** レイアウト設定 **/
 @import 'variable';
 
 // 1:ヘッダーエリア
@@ -6,8 +6,17 @@
     @include fontLobster;
     background: $black;
     width: 100%;
-    z-index: 100;
+    z-index: $z-index-header;
     position: fixed;
+    top: 0;
+    left: 0;
+
+    // コンテンツフレーム
+    &-frame {
+        margin: 0 auto;
+        padding: 20px 15px;
+        padding-left: 40px;
+    }
 }
 
 // 2:ナビゲーションエリア
@@ -15,68 +24,74 @@
     @include fontLobster;
     background: $black;
     width: 100%;
-    z-index: 100;
+    z-index: $z-index-navigation;
     position: fixed;
     top: 90px;
     left: 0;
+
+    // コンテンツフレーム
+    &-frame {
+
+    }
 }
 
 // 3:コンテンツエリア
 .contents-area {
-    background-image: url(../images/bg-penki.png);
+    background-image: $image-penki;
     padding-top: 125px;
     @media screen and (max-width: $sp-max-width) {
         padding-top: 70px;
     }
-}
 
-// コンテンツフレーム
-.frame-zone {
-    background: $white-skelton;
-    margin: 0 auto;
-}
-
-// フレックス設定
-.flex-box {
-    display: flex;
-    justify-content: space-around;
-    @media screen and (max-width: $sp-max-width) {
-        display: block;
+    // コンテンツフレーム
+    &-frame {
+        background: $white-skelton;
+        margin: 0 auto;
     }
-}
 
-// 3-1:メインエリア
-.main-area {
-    width: 85%;
-    border-right: 1px solid $black;
-    @media screen and (max-width: $sp-max-width) {
-        width: 100%;
-        border-right: none;
+    // 3-1:メインエリア
+    .main-area {
+        width: 85%;
+        border-right: 1px solid $black;
+        @media screen and (max-width: $sp-max-width) {
+            width: 100%;
+            border-right: none;
+            border-bottom: 1px solid $black;
+        }
+
+        // コンテンツフレーム
+        &-frame {
+            padding: 20px;
+        }
     }
-}
 
-// 3-2:サイドエリア
-.aside-area {
-    width: 15%;
-    @media screen and (max-width: $sp-max-width) {
-        width: 100%;
-        border-top: 1px solid $black;
+    // 3-2:サイドエリア
+    .aside-area {
+        width: 15%;
+        @media screen and (max-width: $sp-max-width) {
+            width: 100%;
+        }
+
+        // コンテンツフレーム
+        &-frame {
+            padding: 20px;
+        }
     }
-}
-
-// エリア内コンテンツフレーム
-.contents-frame {
-    padding: 20px;
 }
 
 // 4:フッターエリア
 .footer-area {
-    background: $black;
     @include fontLobster;
+    background: $black;
     @media screen and (max-width: $sp-max-width) {
         background: $black-skelton;
         position: fixed;
         bottom: 0;
         left: 0;
+    }
+
+    // コンテンツフレーム
+    &-frame {
+        padding: 20px 15px;
     }
 }

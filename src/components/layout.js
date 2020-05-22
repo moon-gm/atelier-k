@@ -29,35 +29,41 @@ const Layout = ({ children }) => {
         <>
             {/* 1:ヘッダーエリア */}
             <Header
-                className="header-area"
+                classHeader="header-area"
+                classHeaderFrame="header-area-frame"
                 siteTitle={ data.site.siteMetadata.title }
             />
 
             {/* 2:ナビゲーションエリア */}
             <Navigation
-                className="nav-area"
+                classNav="nav-area"
+                classNavFrame="nav-area-frame"
             />
 
             {/* 3:コンテンツエリア */}
             <div className="contents-area">
-                <div className="frame-zone flex-box">
+                <div className="contents-area-frame flex-box">
+
                     {/* 3-1:メインエリア */}
                     <main className="main-area">
-                        <div className="contents-frame contents-frame__main-area">
+                        <div className="main-area-frame">
                             { children }
                         </div>
                     </main>
+
                     {/* 3-2:サイドエリア */}
                     <Aside
                         className="aside-area"
-                        contentsFrame="contents-frame contents-frame__aside-area"
+                        contentsFrame="aside-area-frame"
                     />
+
                 </div>
             </div>
 
             {/* 4:フッターエリア */}
             <Footer
-                className="footer-area"
+                classFooter="footer-area"
+                classFooterFrame="footer-area-frame"
                 siteFooter={ data.site.siteMetadata.footer }
             />
         </>

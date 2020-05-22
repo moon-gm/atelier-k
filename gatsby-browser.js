@@ -10,3 +10,5 @@ import './src/sass/reset.scss'
 import './src/sass/style.scss'
 // レイアウト設定
 import './src/sass/layout.scss'
+// 共通設定
+import './src/sass/common.scss'

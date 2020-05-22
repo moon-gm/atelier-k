@@ -3,15 +3,15 @@ import PropTypes from "prop-types"
 import React from "react"
 import Styles from "../../sass/module/area/header.module.scss"
 
-const Header = ({ siteTitle, className }) => (
+const Header = ({ siteTitle, classHeader, classHeaderFrame }) => (
     // 1:ヘッダーエリア
     <header
-        className={ className }
+        className={ classHeader }
         id="top"
     >
         {/* コンテンツフレーム */}
         <div
-            className={ Styles.frameZone }
+            className={ classHeaderFrame }
         >
             {/* タイトルテキスト */}
             <h1

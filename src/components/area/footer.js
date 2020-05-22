@@ -3,14 +3,14 @@ import PropTypes from "prop-types"
 import React from "react"
 import Styles from "../../sass/module/area/footer.module.scss"
 
-const Footer = ({ siteFooter, className }) => (
+const Footer = ({ siteFooter, classFooter, classFooterFrame }) => (
   // 3:フッターエリア
   <footer
-    className={ className }
+    className={ classFooter }
   >
     {/* コンテンツフレーム */}
     <div
-      className={ Styles.frameZone }
+      className={ classFooterFrame }
     >
       {/* タイトルテキスト */}
       <h1 className={ Styles.titleText }>

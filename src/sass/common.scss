@@ -1,0 +1,11 @@
+/** 共通設定 **/
+@import 'variable';
+
+// フレックス設定
+.flex-box {
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: $sp-max-width) {
+        display: block;
+    }
+}

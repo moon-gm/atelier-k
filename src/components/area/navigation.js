@@ -4,14 +4,14 @@ import NavBtn from "../parts/nav-btn"
 import navBtnConfig from "../../config/config_nav-btn.js"
 import Styles from "../../sass/module/area/navigation.module.scss"
 
-const Navigation = ({ className }) => (
+const Navigation = ({ classNav, classNavFrame }) => (
     // 1.5:ナビゲーションーエリア
     <nav
-        className={ className }
+        className={ classNav }
     >
         {/* コンテンツフレーム */}
         <div
-            className={ Styles.frameZone + ' ' + "flex-box" }
+            className={ classNavFrame + ' ' + "flex-box" }
         >
             <div
                 className={ Styles.textColor + ' ' + Styles.btnStyle }
