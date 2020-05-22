@@ -4,7 +4,7 @@
 // 1:ヘッダーエリア
 .header-area {
     @include fontLobster;
-    background: $black-skelton;
+    background: $black-skelton-high;
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
     width: 100%;
@@ -19,7 +19,6 @@
 
     // コンテンツフレーム
     &-frame {
-        background: $black-skelton;
         margin: 0 auto;
         padding: 20px 15px;
         padding-left: 40px;
@@ -29,7 +28,7 @@
 // 2:ナビゲーションエリア
 .nav-area {
     @include fontLobster;
-    background: $black-skelton;
+    background: $black-skelton-high;
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
     width: 100%;
@@ -45,7 +44,7 @@
 
     // コンテンツフレーム
     &-frame {
-        background: $black-skelton;
+
     }
 }
 
@@ -74,7 +73,7 @@
                 @include fontLobster;
                 content: "LINE Stamps";
                 display: block;
-                background: $black-skelton;
+                background: $black-skelton-high;
                 color: $white;
                 text-align: center;
                 padding: 10px;
@@ -104,7 +103,7 @@
 // 4:フッターエリア
 .footer-area {
     @include fontLobster;
-    background: $black-skelton;
+    background: $black-skelton-high;
     @media screen and (max-width: $sp-max-width) {
         position: fixed;
         top: 0;
@@ -119,7 +118,6 @@
     // コンテンツフレーム
     &-frame {
         padding: 20px 15px;
-        background: $black-skelton;
         @media screen and (max-width: $sp-max-width) {
             padding: 10px;
         }
