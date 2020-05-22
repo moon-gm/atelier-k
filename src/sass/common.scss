@@ -20,6 +20,7 @@
     @media screen and (max-width: $sp-max-width) {
         font-size: 25px;
         padding-top: 0;
+        margin-bottom: 20px;
     }
 }
 
@@ -30,4 +31,11 @@
     padding-bottom: 5px;
     padding-left: 5px;
     border-bottom: 1px solid $black;
+    margin-bottom: 20px;
+}
+
+// pレベル段落設定
+.p {
+    padding: 0 10px;
+    margin-bottom: 20px;
 }

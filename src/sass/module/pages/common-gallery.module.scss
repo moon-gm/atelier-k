@@ -5,7 +5,6 @@
 .main-container {
     // 月単位のコンテナ
     .month-container {
-        padding-top: 20px;
         padding-left: 120px;
         flex-wrap: wrap;
         @media screen and (max-width: $sp-max-width) {

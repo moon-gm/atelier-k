@@ -21,7 +21,7 @@ export default [
     {
         'image': 'stamp-4.png',
         'alt': 'Kuh\'s Stamps ４',
-        'title': 'Part.4 Everthing is Emotions',
+        'title': 'Part.4 Everything is Emotions',
         'url': 'https://store.line.me/stickershop/product/7101188',
     },
     {
