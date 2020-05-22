@@ -5,25 +5,19 @@ import Styles from "../../sass/module/area/footer.module.scss"
 
 const Footer = ({ siteFooter, classFooter, classFooterFrame }) => (
   // 3:フッターエリア
-  <footer
-    className={ classFooter }
-  >
-    {/* コンテンツフレーム */}
-    <div
-      className={ classFooterFrame }
-    >
-      {/* タイトルテキスト */}
-      <h1 className={ Styles.titleText }>
+  <footer className={ classFooter }>
+    <div className={ classFooterFrame }>
+
+      {/* テキスト */}
+      <h1 className={ Styles.texts }>
         <Link
-          to={
-            `${ process.env.APP_NAME }` !== null ? `${ process.env.APP_NAME }#top` : "#top"
-        }
+          to={ `${ process.env.APP_NAME }` !== null ? `${ process.env.APP_NAME }#top` : "#top" }
           className={ Styles.link }
         >
-          { /* gatsby-config.jsで定義(layout.jsで呼び出している) */ }
           { siteFooter }
         </Link>
       </h1>
+
     </div>
   </footer>
 )

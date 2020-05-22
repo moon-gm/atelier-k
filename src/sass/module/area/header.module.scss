@@ -1,16 +1,6 @@
 /** ヘッダーのモジュール **/
 @import '../../variable';
 
-.img-area {
-    width: 100%;
-    height: auto;
-    line-height: 0;
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
 // 表示文字設定
 .title-text {
     font-size: 50px;
@@ -18,9 +8,10 @@
     @media screen and (max-width: $sp-max-width) {
         font-size: 30px;
     }
+
+    // リンク設定
+    .link {
+        color: $white;
+    }
 }
 
-// リンク設定
-.link {
-    color: $white;
-}

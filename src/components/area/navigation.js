@@ -1,35 +1,32 @@
 import PropTypes from "prop-types"
 import React from "react"
 import NavBtn from "../parts/nav-btn"
-import navBtnConfig from "../../config/config_nav-btn.js"
+import Config from "../../config/config_nav-btn.js"
 import Styles from "../../sass/module/area/navigation.module.scss"
 
 const Navigation = ({ classNav, classNavFrame }) => (
-    // 1.5:ナビゲーションーエリア
-    <nav
-        className={ classNav }
-    >
-        {/* コンテンツフレーム */}
-        <div
-            className={ classNavFrame }
-        >
-            <div
-                className={ Styles.textColor + ' ' + Styles.btnStyle }
-            >
-                <p>
+    // 2:ナビゲーションエリア
+    <nav className={ classNav }>
+        <div className={ classNavFrame }>
+
+            {/* ナビゲーションの見出し */}
+            <div className={ Styles.btnStyle }>
+                <p className={ Styles.text }>
                     Gallery
                 </p>
             </div>
-            {
-                // リンクボタンを複数生成
-                navBtnConfig.map( item => { return (
+
+            {/* ナビゲーションボタン */
+                // Configの設定値をループ
+                Config.map( item => { return (
                     <NavBtn
-                        linkText={ item.link }
+                        linkText={ item.to }
                         linkTo={ item.to }
                         key={ item.to }
                     />
                 )})
             }
+
         </div>
     </nav>
 )

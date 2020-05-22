@@ -9,24 +9,18 @@ const Header = ({ siteTitle, classHeader, classHeaderFrame }) => (
         className={ classHeader }
         id="top"
     >
-        {/* コンテンツフレーム */}
-        <div
-            className={ classHeaderFrame }
-        >
+        <div className={ classHeaderFrame }>
+
             {/* タイトルテキスト */}
-            <h1
-                className={ Styles.titleText }
-            >
+            <h1 className={ Styles.titleText }>
                 <Link
-                    to={
-                        `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/` : "/"
-                    }
+                    to={ `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/` : "/" }
                     className={ Styles.link }
                 >
-                    {/* gatsby-config.jsで定義(layout.jsで呼び出している) */}
                     { siteTitle }
                 </Link>
             </h1>
+
         </div>
     </header>
 )

@@ -1,27 +1,24 @@
 /** ナビゲーションのモジュール **/
 @import '../../variable';
 
-// 表示文字設定
-.text-color {
-    color: $white;
-}
-
-// リンク設定
-.link {
-    color: $white;
-}
-
 // ボタン設定
 .btn-style {
     display: inline;
-    a {
+
+    // 文字列がリンクの場合
+    .link {
         display: block;
+        color: $white;
         padding: 10px;
         &:hover {
             background-color: $white-skelton;
+            color: $black;
         }
     }
-    p {
+
+    // 文字列がテキストの場合
+    .text {
+        color: $white;
         padding: 10px;
     }
     @media screen and (max-width: $sp-max-width) {

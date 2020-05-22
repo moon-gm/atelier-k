@@ -1,47 +1,55 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Styles from "../../sass/module/area/contents-aside.module.scss"
-import asideConfig from "../../config/config_aside.js"
+import Config from "../../config/config_aside.js"
 import Img from "../parts/image"
 
 const Aside = ({ className, contentsFrame }) => (
-    // 2-2:サイドエリア
+    // 3-2:サイドエリア
     <aside className={ className }>
-        {/* コンテンツフレーム */}
         <div className={ contentsFrame }>
-            <div
-                className={ Styles.sideBox }
-            >
+
+            {/* LINEコンテンツボックス */}
+            <div className={ Styles.contentsBox }>
+
+                {/* LINE画像 */}
                 <Img fileName="line-icon.png" />
-                <p>
+
+                {/* LINEテキスト */}
+                <p className={ Styles.contentsText }>
                     Kuh's LINE Stamps Now on Sale！
                 </p>
+
             </div>
-                {
-                    // スタンプ一覧をループで表示
-                    asideConfig.map( item => { return (
-                        <div
-                            className={ Styles.sideBox }
-                            key={ item.srcImg }
+
+            {/* スタンプコンテンツボックス */
+                // Configの設定値をループ
+                Config.map( item => { return (
+                    <div
+                        className={ Styles.contentsBox }
+                        key={ item.image }
+                    >
+                        <a
+                            href={ item.url }
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            <a
-                                className={ Styles.link }
-                                href={ item.url }
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {/* スタンプ画像 */}
-                                <div className={ Styles.lineIcon }>
-                                    <Img fileName={ item.srcImg } />
-                                </div>
-                                {/* スタンプタイトル */}
-                                <p>
-                                    { item.textA }
-                                </p>
-                            </a>
-                        </div>
-                    )})
-                }
+
+                            {/* スタンプ画像 */}
+                            <div className={ Styles.contentsImage }>
+                                <Img fileName={ item.image } />
+                            </div>
+
+                            {/* スタンプタイトル */}
+                            <p className={ Styles.contentsText }>
+                                { item.title }
+                            </p>
+
+                        </a>
+                    </div>
+                )})
+            }
+
         </div>
     </aside>
 )
