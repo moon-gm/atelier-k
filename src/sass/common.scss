@@ -52,24 +52,24 @@
 // Topへ戻るボタン設定
 .top-btn {
     @include fontLobster;
-    background: $black-skelton-dark;
-    margin-top: 60px;
+    font-size: 20px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 105px;
+    z-index: $z-index-top-btn;
     a {
         display: block;
-        padding: 20px 15px;
+        padding: 40px 10px;
         @media screen and (max-width: $sp-max-width) {
             padding: 10px;
         }
     }
     @media screen and (max-width: $sp-max-width) {
         height: $sp-header-height;
-        margin: 0;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 25%;
-        z-index: $z-index-top-btn;
-        -webkit-backdrop-filter: blur(30px);
-        backdrop-filter: blur(30px);
+        font-size: 16px;
     }
 }

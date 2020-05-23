@@ -16,9 +16,7 @@
     padding: 20px 15px;
     padding-left: 40px;
     @media screen and (max-width: $sp-max-width) {
-        width: 75%;
         height: $sp-header-height;
-        border-right: 1px solid $white-skelton;
         padding: 10px;
     }
 
