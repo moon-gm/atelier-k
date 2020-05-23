@@ -37,12 +37,12 @@ const Layout = ({ children }) => {
             {/* 2:ナビゲーションエリア */}
             <Navigation
                 classNav="nav-area"
-                classNavFrame="nav-area-frame flex-box"
+                classNavFrame="nav-area-frame flex-all"
             />
 
             {/* 3:コンテンツエリア */}
             <div className="contents-area">
-                <div className="contents-area-frame flex-box">
+                <div className="contents-area-frame flex-pc">
 
                     {/* 3-1:メインエリア */}
                     <main className="main-area">

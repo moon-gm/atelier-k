@@ -1,12 +1,13 @@
 /** 変数定義 **/
-// width定義
+// サイズ定義
 $sp-max-width: 768px;
+$sp-header-height: 40px;
 
 // カラー定義
 $black: black;
 $white: white;
 $black-skelton: rgba(0, 0, 0, 0.5);
-$black-skelton-high: rgba(0, 0, 0, 0.8);
+$black-skelton-dark: rgba(0, 0, 0, 0.8);
 $white-skelton: rgba(255, 255, 255, 0.8);
 
 // 画像定義

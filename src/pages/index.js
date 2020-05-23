@@ -62,7 +62,7 @@ const IndexPage = () => (
         </div>
         <TopBtn
             classTopBtn="top-btn"
-            getPathName = { window.location.pathname }
+            getPathName ="/"
         />
     </Layout>
 )

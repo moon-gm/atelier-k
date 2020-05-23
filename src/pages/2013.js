@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TopBtn from "../components/parts/top-btn"
 
+import { Link } from "gatsby"
 import Img from "../components/parts/image"
 import Config from "../config/config_gallery-2013.js"
 import Styles from "../sass/module/pages/common-gallery.module.scss"
@@ -33,7 +34,7 @@ const Gallery2013 = () => (
 
                 {/*--- 月単位のコンテナ ---*/}
                 <div
-                    className={ `${ Styles.monthContainer } flex-box` }
+                    className={ `${ Styles.monthContainer } flex-pc` }
                     key={ month[0].month }
                 >
                     {// コンテンツ単位のループ
@@ -44,8 +45,8 @@ const Gallery2013 = () => (
                                 className={ Styles.contentsContainer }
                                 key={ contents.fileName }
                             >
-                                <a
-                                    href={ `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images/${ contents.fileName }` : `src/images/${ contents.fileName }` }
+                                <Link
+                                    to={ `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images/${ contents.fileName }` : `/images/${ contents.fileName }` }
                                     target="_blank"
                                     rel="noreferrer"
                                 >
@@ -62,7 +63,7 @@ const Gallery2013 = () => (
                                         </p>
                                     </div>
 
-                                </a>
+                                </Link>
                             </div>
 
                         )})
@@ -76,7 +77,7 @@ const Gallery2013 = () => (
 
     <TopBtn
         classTopBtn="top-btn"
-        getPathName = { window.location.pathname }
+        getPathName ="/2013"
     />
 
   </Layout>

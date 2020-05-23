@@ -14,9 +14,6 @@
             background-color: $white-skelton;
             color: $black;
         }
-        @media screen and (max-width: $sp-max-width) {
-            padding: 0;
-        }
     }
 
     // 文字列がテキストの場合

@@ -16,8 +16,7 @@ const Navigation = ({ classNav, classNavFrame }) => (
                 // Configの設定値をループ
                 Config.map( item => { return (
                     <NavBtn
-                        // JSで書き換えるため初期値は""
-                        linkText=""
+                        linkText={ item.to }
                         linkTo={ item.to }
                         key={ item.to }
                     />
