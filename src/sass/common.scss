@@ -49,6 +49,7 @@
 .top-btn {
     @include fontLobster;
     background: $black-skelton-dark;
+    margin-top: 60px;
     a {
         display: block;
         padding: 20px 15px;
@@ -57,8 +58,9 @@
         }
     }
     @media screen and (max-width: $sp-max-width) {
-        position: fixed;
         height: $sp-header-height;
+        margin: 0;
+        position: fixed;
         top: 0;
         right: 0;
         width: 25%;
