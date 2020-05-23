@@ -17,6 +17,32 @@ const Gallery2013 = () => (
         Gallery 2013
     </h1>
 
+    {/* 月別フォルダタイトル */}
+    <h2 className="h2">
+        Jump to
+    </h2>
+
+    {/* 月別フォルダ */}
+    <div className="flex-all flex-wrap">
+        {/* ループでジャンプする月別フォルダを作成 */
+            Config.map ( month => { return (
+                <div
+                    className={ Styles.monthFolder }
+                    key={ month[0].month }
+                >
+                    <Link
+                        to={ `/2013#${ month[0].month }` }
+                    >
+                        <h3 className={ Styles.monthTitle }>
+                            { month[0].month }
+                        </h3>
+                        <Img fileName="palette-icon.png" />
+                    </Link>
+                </div>
+            )})
+        }
+    </div>
+
     { /* ループでコンテナを作成 */
         // 月単位のループ
         Config.map( month => { return (
@@ -26,7 +52,13 @@ const Gallery2013 = () => (
                 className={ Styles.mainContainer }
                 key={ month[0].month }
             >
+                {/* ヘッダーの固定によるid遷移のズレ対策スペーサー */}
+                <div
+                    className={ Styles.spacerForId }
+                    id={ month[0].month }
+                >
 
+                </div>
                 {/* 月別タイトル */}
                 <h2 className="h2">
                     { month[0].month }
@@ -34,7 +66,7 @@ const Gallery2013 = () => (
 
                 {/*--- 月単位のコンテナ ---*/}
                 <div
-                    className={ `${ Styles.monthContainer } flex-pc` }
+                    className={ `${ Styles.monthContainer } flex-pc flex-wrap` }
                     key={ month[0].month }
                 >
                     {// コンテンツ単位のループ

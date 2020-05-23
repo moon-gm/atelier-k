@@ -1,12 +1,31 @@
 /** Gallery画面共通のモジュール **/
 @import '../../variable';
 
+// 月別フォルダ
+.month-folder {
+    width: 60px;
+    .month-title {
+        @include fontLobster;
+        font-size: 12px;
+        text-align: center;
+        @media screen and (max-width: $sp-max-width) {
+            font-size: 12px;
+        }
+    }
+}
+
 // メインコンテナ（月別タイトル＋月単位のコンテナ）
 .main-container {
+    .spacer-for-id {
+        padding-top: 160px;
+        @media screen and (max-width: $sp-max-width) {
+            padding-top: 90px;
+        }
+    }
+
     // 月単位のコンテナ
     .month-container {
         padding-left: 120px;
-        flex-wrap: wrap;
         @media screen and (max-width: $sp-max-width) {
             padding-left: 0;
         }
