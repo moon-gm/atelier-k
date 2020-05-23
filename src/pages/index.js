@@ -1,7 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
-import Image from "../components/parts/image"
 import SEO from "../components/seo"
+import TopBtn from "../components/parts/top-btn"
+
+import Image from "../components/parts/image"
 
 const IndexPage = () => (
     <Layout>
@@ -58,6 +60,11 @@ const IndexPage = () => (
                 Finally, we think we want to introduce his many faces.
             </p>
         </div>
+        <TopBtn
+            classTopBtn="top-btn"
+            classTopBtnFrame="top-btn-frame"
+            getPathName = { window.location.pathname }
+        />
     </Layout>
 )
 

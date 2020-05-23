@@ -1,22 +1,14 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Styles from "../../sass/module/area/footer.module.scss"
 
-var getPathName = window.location.pathname
-
 const Footer = ({ siteFooter, classFooter, classFooterFrame }) => (
-  // 3:フッターエリア
+  // 4:フッターエリア
   <footer className={ classFooter }>
     <div className={ classFooterFrame }>
       {/* テキスト */}
       <h1 className={ Styles.texts }>
-        <Link
-          to={ `${ process.env.APP_NAME }` !== null ? `${ process.env.APP_NAME }${ getPathName }` : getPathName }
-          className={ Styles.link }
-        >
           { siteFooter }
-        </Link>
       </h1>
 
     </div>

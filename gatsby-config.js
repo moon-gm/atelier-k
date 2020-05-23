@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `ATELIER K`,
-    footer: `TOP`,
+    footer: `Presented by ATELIER K, Using the Frame Work "Gatsby", "React"`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },

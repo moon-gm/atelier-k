@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import TopBtn from "../components/parts/top-btn"
+
 import Img from "../components/parts/image"
 import Config from "../config/config_gallery-2013.js"
 import Styles from "../sass/module/pages/common-gallery.module.scss"
@@ -71,6 +73,12 @@ const Gallery2013 = () => (
 
         )})
     }
+
+    <TopBtn
+        classTopBtn="top-btn"
+        classTopBtnFrame="top-btn-frame"
+        getPathName = { window.location.pathname }
+    />
 
   </Layout>
 )

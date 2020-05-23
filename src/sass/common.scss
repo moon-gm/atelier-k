@@ -39,3 +39,31 @@
     padding: 0 10px;
     margin-bottom: 20px;
 }
+
+// Topへ戻るボタン設定
+.top-btn {
+    @include fontLobster;
+    background: $black-skelton-high;
+    a {
+        display: block;
+        padding: 20px 15px;
+        @media screen and (max-width: $sp-max-width) {
+            padding: 10px;
+        }
+    }
+    @media screen and (max-width: $sp-max-width) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 25%;
+        z-index: $z-index-footer;
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+        border-bottom: 1px solid $white-skelton;
+    }
+
+    // コンテンツフレーム
+    &-frame {
+
+    }
+}
