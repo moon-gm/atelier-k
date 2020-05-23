@@ -15,22 +15,22 @@ function clickBtnAction(){
                 navList[item.no].style.padding = "0";
             } else {
                 navList[item.no].textContent = item.to;
-                navList[item.no].style.borderTop = "1px solid rgba(255, 255, 255, 0.8)";
                 navList[item.no].style.padding = "10px";
             }
+            return true;
          })
     }
 
     // 上記functionを引き継いだonclick属性を付与したGalleryボタンを返す
     return (
         <div className={ Styles.btnStyle }>
-            <p
+            <button
                 id="btn-display"
                 className={ Styles.texts }
                 onClick={ clickBtn }
             >
                 Gallery
-            </p>
+            </button>
         </div>
     )
 }

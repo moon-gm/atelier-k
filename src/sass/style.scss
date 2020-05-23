@@ -17,3 +17,12 @@ a {
         background: $black-skelton;
     }
 }
+
+// ボタン設定
+button {
+    @include fontLobster;
+    background: none;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}

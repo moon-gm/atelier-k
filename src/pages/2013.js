@@ -76,7 +76,6 @@ const Gallery2013 = () => (
 
     <TopBtn
         classTopBtn="top-btn"
-        classTopBtnFrame="top-btn-frame"
         getPathName = { window.location.pathname }
     />
 

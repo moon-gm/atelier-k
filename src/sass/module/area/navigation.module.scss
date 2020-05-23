@@ -15,14 +15,14 @@
             color: $black;
         }
         @media screen and (max-width: $sp-max-width) {
-            border-top: 1px solid $white-skelton;
+            padding: 0;
         }
     }
 
     // 文字列がテキストの場合
     .texts {
         color: $white;
-        padding: 10px;
+        padding: 7.5px 10px;
     }
 }
 

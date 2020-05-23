@@ -56,14 +56,9 @@
         top: 0;
         right: 0;
         width: 25%;
-        z-index: $z-index-footer;
+        z-index: $z-index-top-btn;
         -webkit-backdrop-filter: blur(30px);
         backdrop-filter: blur(30px);
         border-bottom: 1px solid $white-skelton;
-    }
-
-    // コンテンツフレーム
-    &-frame {
-
     }
 }
