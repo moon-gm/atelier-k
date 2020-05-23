@@ -19,7 +19,10 @@ const Gallery2013 = () => (
         Config.map( month => { return (
 
             /*--- メインコンテナ ---*/
-            <div className={ Styles.mainContainer }>
+            <div
+                className={ Styles.mainContainer }
+                key={ month[0].month }
+            >
 
                 {/* 月別タイトル */}
                 <h2 className="h2">
@@ -27,12 +30,18 @@ const Gallery2013 = () => (
                 </h2>
 
                 {/*--- 月単位のコンテナ ---*/}
-                <div className={ `${ Styles.monthContainer } flex-box` }>
+                <div
+                    className={ `${ Styles.monthContainer } flex-box` }
+                    key={ month[0].month }
+                >
                     {// コンテンツ単位のループ
                         month.map( contents => { return (
 
                             /*--- コンテンツ単位のコンテナ ---*/
-                            <div className={ Styles.contentsContainer }>
+                            <div
+                                className={ Styles.contentsContainer }
+                                key={ contents.fileName }
+                            >
                                 <a
                                     href={ `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images/${ contents.fileName }` : `src/images/${ contents.fileName }` }
                                     target="_blank"

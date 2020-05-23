@@ -7,7 +7,7 @@ const NavBtn = ({ linkText, linkTo }) => (
     <div className={ Styles.btnStyle }>
         <Link
             to={ `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/${ linkTo }/` : linkTo }
-            className={ Styles.link }
+            className={ `${ Styles.link } js-nav-btn` }
         >
             { linkText }
         </Link>

@@ -2,19 +2,15 @@ import PropTypes from "prop-types"
 import React from "react"
 import NavBtn from "../parts/nav-btn"
 import Config from "../../config/config_nav-btn.js"
-import Styles from "../../sass/module/area/navigation.module.scss"
+import DisplayNavBtn from "../../function/nav-list.js"
 
 const Navigation = ({ classNav, classNavFrame }) => (
     // 2:ナビゲーションエリア
     <nav className={ classNav }>
         <div className={ classNavFrame }>
 
-            {/* ナビゲーションの見出し */}
-            <div className={ Styles.btnStyle }>
-                <p className={ Styles.texts }>
-                    Gallery
-                </p>
-            </div>
+            {/* ナビゲーションボタンの表示選択ボタン */}
+            <DisplayNavBtn />
 
             {/* ナビゲーションボタン */
                 // Configの設定値をループ
