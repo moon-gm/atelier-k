@@ -194,50 +194,176 @@ export default [
         
     ],
     [
-        // 3月
+        // 8月
         {
-            'month': 'March',
-            'fileName': 'stamp-1.png',
-            'altName': 'くうちゃんスタンプ画像１',
-            'comment': 'part.1 うさぎかぶり',
+            'month': 'August',
+            'fileName': '2013-08_01.jpg',
+            'altName': 'growing_up',
+            'comment': 'Growing up',
         },
         {
-            'month': 'March',
-            'fileName': 'stamp-1.png',
-            'altName': 'くうちゃんスタンプ画像１',
-            'comment': 'part.1 うさぎかぶり',
+            'month': 'August',
+            'fileName': '2013-08_02.jpg',
+            'altName': 'growing_up',
+            'comment': 'Growing up',
         },
         {
-            'month': 'March',
-            'fileName': 'stamp-1.png',
-            'altName': 'くうちゃんスタンプ画像１',
-            'comment': 'part.1 うさぎかぶり',
+            'month': 'August',
+            'fileName': '2013-08_03.jpg',
+            'altName': 'growing_up',
+            'comment': 'Growing up',
         },
         {
-            'month': 'March',
-            'fileName': 'stamp-1.png',
-            'altName': 'くうちゃんスタンプ画像１',
-            'comment': 'part.1 うさぎかぶり',
+            'month': 'August',
+            'fileName': '2013-08_04.jpg',
+            'altName': 'growing_up',
+            'comment': 'Growing up',
         },
         {
-            'month': 'March',
-            'fileName': 'stamp-1.png',
-            'altName': 'くうちゃんスタンプ画像１',
-            'comment': 'part.1 うさぎかぶり',
+            'month': 'August',
+            'fileName': '2013-08_05.jpg',
+            'altName': 'growing_up',
+            'comment': 'Growing up',
         },
         {
-            'month': 'March',
-            'fileName': 'stamp-1.png',
-            'altName': 'くうちゃんスタンプ画像１',
-            'comment': 'part.1 うさぎかぶり',
+            'month': 'August',
+            'fileName': '2013-08_06.jpg',
+            'altName': 'growing_up',
+            'comment': 'Growing up',
         },
         {
-            'month': 'March',
-            'fileName': 'stamp-1.png',
-            'altName': 'くうちゃんスタンプ画像１',
-            'comment': 'part.1 うさぎかぶり',
+            'month': 'August',
+            'fileName': '2013-08_07.jpg',
+            'altName': 'growing_up',
+            'comment': 'Growing up',
+        },
+        {
+            'month': 'August',
+            'fileName': '2013-08_08.jpg',
+            'altName': 'growing_up',
+            'comment': 'Growing up',
         },
 
+    ],
+    [
+        // 9月
+        {
+            'month': 'September',
+            'fileName': '2013-09_01.jpg',
+            'altName': 'like_fox',
+            'comment': 'Like Fox',
+        },
+        {
+            'month': 'September',
+            'fileName': '2013-09_02.jpg',
+            'altName': 'like_fox',
+            'comment': 'Like Fox',
+        },
+        {
+            'month': 'September',
+            'fileName': '2013-09_03.jpg',
+            'altName': 'like_fox',
+            'comment': 'Like Fox',
+        },
+        {
+            'month': 'September',
+            'fileName': '2013-09_04.jpg',
+            'altName': 'like_fox',
+            'comment': 'Like Fox',
+        },
+        {
+            'month': 'September',
+            'fileName': '2013-09_05.jpg',
+            'altName': 'like_fox',
+            'comment': 'Like Fox',
+        },
+        {
+            'month': 'September',
+            'fileName': '2013-09_06.jpg',
+            'altName': 'like_fox',
+            'comment': 'Like Fox',
+        },
+        {
+            'month': 'September',
+            'fileName': '2013-09_07.jpg',
+            'altName': 'like_fox',
+            'comment': 'Like Fox',
+        },
+        {
+            'month': 'September',
+            'fileName': '2013-09_08.jpg',
+            'altName': 'like_fox',
+            'comment': 'Like Fox',
+        },
+        {
+            'month': 'September',
+            'fileName': '2013-09_09.jpg',
+            'altName': 'like_fox',
+            'comment': 'Like Fox',
+        },
+    ],
+    [
+        // 10月
+        {
+            'month': 'October',
+            'fileName': '2013-10_01.jpg',
+            'altName': 'round_and_cool',
+            'comment': 'Round and Cool',
+        },
+        {
+            'month': 'October',
+            'fileName': '2013-10_02.jpg',
+            'altName': 'round_and_cool',
+            'comment': 'Round and Cool',
+        },
+        {
+            'month': 'October',
+            'fileName': '2013-10_03.jpg',
+            'altName': 'round_and_cool',
+            'comment': 'Round and Cool',
+        },
+        {
+            'month': 'October',
+            'fileName': '2013-10_04.jpg',
+            'altName': 'round_and_cool',
+            'comment': 'Round and Cool',
+        },
+        {
+            'month': 'October',
+            'fileName': '2013-10_05.jpg',
+            'altName': 'round_and_cool',
+            'comment': 'Round and Cool',
+        },
+        {
+            'month': 'October',
+            'fileName': '2013-10_06.jpg',
+            'altName': 'round_and_cool',
+            'comment': 'Round and Cool',
+        },
+        {
+            'month': 'October',
+            'fileName': '2013-10_07.jpg',
+            'altName': 'round_and_cool',
+            'comment': 'Round and Cool',
+        },
+    ],
+    [
+        // 11月
+        {
+            'month': 'August',
+            'fileName': '2013-08_01.jpg',
+            'altName': 'growing_up',
+            'comment': 'Growing up',
+        },
+    ],
+    [
+        // 12月
+        {
+            'month': 'August',
+            'fileName': '2013-08_01.jpg',
+            'altName': 'growing_up',
+            'comment': 'Growing up',
+        },
     ],
 ];
 
