@@ -78,7 +78,7 @@ const Gallery2013 = () => (
                                 key={ contents.fileName }
                             >
                                 <Link
-                                    to={ `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images/${ contents.month }/${ contents.fileName }` : `/images/${ contents.month }/${ contents.fileName }` }
+                                    to={ `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images/2013/${ contents.month }/${ contents.fileName }` : `/images/2013/${ contents.month }/${ contents.fileName }` }
                                     target="_blank"
                                     rel="noreferrer"
                                 >
