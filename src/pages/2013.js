@@ -31,7 +31,7 @@ const Gallery2013 = () => (
                     key={ month[0].month }
                 >
                     <Link
-                        to={ `/2013#${ month[0].month }` }
+                        to={ `${ process.env.APP_NAME }` !== "" ? `#${ month[0].month }` : `/2013#${ month[0].month }` }
                     >
                         <h3 className={ Styles.monthTitle }>
                             { month[0].month }

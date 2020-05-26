@@ -31,7 +31,7 @@ const Gallery2018 = () => (
                     key={ month[0].month }
                 >
                     <Link
-                        to={ `/2018#${ month[0].month }` }
+                        to={ `${ process.env.APP_NAME }` !== "" ? `#${ month[0].month }` : `/2018#${ month[0].month }` }
                     >
                         <h3 className={ Styles.monthTitle }>
                             { month[0].month }
@@ -78,7 +78,7 @@ const Gallery2018 = () => (
                                 key={ contents.fileName }
                             >
                                 <Link
-                                    to={ `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images/${ contents.fileName }` : `/images/${ contents.fileName }` }
+                                    to={ `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images/2018/${ contents.month }/${ contents.fileName }` : `/images/2018/${ contents.month }/${ contents.fileName }` }
                                     target="_blank"
                                     rel="noreferrer"
                                 >
