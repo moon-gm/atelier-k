@@ -1,9 +1,10 @@
 module.exports = {
+    // サイトのメタ情報定義
   siteMetadata: {
     title: `ATELIER K`,
     footer: `Presented by ATELIER K, Using the Frame Work "Gatsby", "React"`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `This is a hobby site that we introduce our cat, Kuh-chan.We mainly introduce him by using many pictures of him.`,
+    author: `ATELIER K`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

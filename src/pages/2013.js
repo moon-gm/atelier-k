@@ -5,33 +5,37 @@ import TopBtn from "../components/parts/top-btn"
 
 import { Link } from "gatsby"
 import Img from "../components/parts/image"
-import Config from "../config/config_gallery-2013.js"
 import Styles from "../sass/module/pages/common-gallery.module.scss"
 
-const Gallery2013 = () => (
+// --- 年によって変更する必要のある箇所 -------------------
+import Config from "../config/config_gallery-2013.js"
+const title ="Gallery 2013"
+// ---------------------------------------------------
+
+export default ( props ) => (
   <Layout>
-    <SEO title="Gallery 2013" />
+    <SEO title={ title } />
 
     {/* ページタイトル */}
     <h1 className="h1">
-        Gallery 2013
+        { title }
     </h1>
 
-    {/* 月別フォルダタイトル */}
+    {/* 月別ジャンプリストタイトル */}
     <h2 className="h2">
         Jump to
     </h2>
 
-    {/* 月別フォルダ */}
+    {/* 月別ジャンプリスト */}
     <div className="flex-all flex-wrap">
-        {/* ループでジャンプする月別フォルダを作成 */
+        {/* ループでジャンプする月別ジャンプリストを作成 */
             Config.map ( month => { return (
                 <div
                     className={ Styles.monthFolder }
                     key={ month[0].month }
                 >
                     <Link
-                        to={ `${ process.env.APP_NAME }` !== "" ? `#${ month[0].month }` : `/2013#${ month[0].month }` }
+                        to={ `${ process.env.APP_NAME }` !== "" ? `#${ month[0].month }` : `${ props.path }#${ month[0].month }` }
                     >
                         <h3 className={ Styles.monthTitle }>
                             { month[0].month }
@@ -78,7 +82,7 @@ const Gallery2013 = () => (
                                 key={ contents.fileName }
                             >
                                 <Link
-                                    to={ `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images/2013/${ contents.month }/${ contents.fileName }` : `/images/2013/${ contents.month }/${ contents.fileName }` }
+                                    to={ `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images${ props.path }${ contents.month }/${ contents.fileName }` : `/images${ props.path }${ contents.month }/${ contents.fileName }` }
                                     target="_blank"
                                     rel="noreferrer"
                                 >
@@ -109,10 +113,9 @@ const Gallery2013 = () => (
 
     <TopBtn
         classTopBtn="top-btn"
-        getPathName ="/2013"
+        getPathName ={ props.path }
     />
 
   </Layout>
 )
 
-export default Gallery2013
