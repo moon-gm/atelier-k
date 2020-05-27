@@ -30,12 +30,13 @@ const ForTest = (props: PageProps) => {
   <Layout>
     <SEO title="For Test" />
 
-    {console.log('■ PageProps' ,props)}
+    {console.log('■ Props' ,props)}
+    {console.log('■ Process' ,process)}
     {console.log('■ GraphQL:sitePagedata' ,data.site.siteMetadata.title)}
     {console.log('■ GraphQL:sitePagedata' ,data.site.siteMetadata.description)}
     {console.log('■ GraphQL:file' ,data.file.childImageSharp.fluid)}
 
-    <h1>props(PageProps)確認</h1>
+    <h1>props確認</h1>
     <br></br>
 
     <p>[props.path] => {props.path}</p>
