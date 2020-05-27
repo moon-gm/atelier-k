@@ -7,115 +7,147 @@ import { Link } from "gatsby"
 import Img from "../components/parts/image"
 import Styles from "../sass/module/pages/common-gallery.module.scss"
 
-// --- 年によって変更する必要のある箇所 -------------------
-import Config from "../config/config_gallery-2013.js"
-const title ="Gallery 2013"
+// 可変領域 -------------------------------------------
+import config from "../config/config_gallery-2013.js"
+const pageTitle ="Gallery 2013"
 // ---------------------------------------------------
 
-export default ( props ) => (
-  <Layout>
-    <SEO title={ title } />
+export default ( props ) => {
 
-    {/* ページタイトル */}
-    <h1 className="h1">
-        { title }
-    </h1>
+    // 設定値定義
+    const yy = props.path
+    const app = process.env.APP_NAME
+    const jumpTitle ="Jump to"
 
-    {/* 月別ジャンプリストタイトル */}
-    <h2 className="h2">
-        Jump to
-    </h2>
+    return (
+        <Layout>
+            <SEO title={ pageTitle } />
 
-    {/* 月別ジャンプリスト */}
-    <div className="flex-all flex-wrap">
-        {/* ループでジャンプする月別ジャンプリストを作成 */
-            Config.map ( month => { return (
-                <div
-                    className={ Styles.monthFolder }
-                    key={ month[0].month }
-                >
-                    <Link
-                        to={ `${ process.env.APP_NAME }` !== "" ? `#${ month[0].month }` : `${ props.path }#${ month[0].month }` }
-                    >
-                        <h3 className={ Styles.monthTitle }>
-                            { month[0].month }
-                        </h3>
-                        <Img fileName="palette-icon.png" />
-                    </Link>
-                </div>
-            )})
-        }
-    </div>
+            {/****** 1:ページタイトルエリア -start- ******/}
+                <h1 className="h1">
+                    { pageTitle }
+                </h1>
+            {/****** 1:ページタイトルエリア -end- ******/}
 
-    { /* ループでコンテナを作成 */
-        // 月単位のループ
-        Config.map( month => { return (
+            {/****** 2:月別ジャンプエリア -start- ******/}
+                {/*** 2-1:月別ジャンプリストタイトル -start- ***/}
+                    <h2 className="h2">
+                        { jumpTitle }
+                    </h2>
+                {/*** 2-1:月別ジャンプリストタイトル -end- ***/}
 
-            /*--- メインコンテナ ---*/
-            <div
-                className={ Styles.mainContainer }
-                key={ month[0].month }
-            >
-                {/* ヘッダーの固定によるid遷移のズレ対策スペーサー */}
-                <div
-                    className={ Styles.spacerForId }
-                    id={ month[0].month }
-                >
+                {/*** 2-2:月別ジャンプリスト -start- ***/}
+                    <div className="flex-all flex-wrap">
+                        {// ループ:月別ジャンプリストを作成
+                            config.map ( months => {
 
-                </div>
-                {/* 月別タイトル */}
-                <h2 className="h2">
-                    { month[0].month }
-                </h2>
+                                // ループ値を変数に格納
+                                var mm = months[0].month
 
-                {/*--- 月単位のコンテナ ---*/}
-                <div
-                    className={ `${ Styles.monthContainer } flex-pc flex-wrap` }
-                    key={ month[0].month }
-                >
-                    {// コンテンツ単位のループ
-                        month.map( contents => { return (
+                                return (
+                                    <div
+                                        className={ Styles.monthFolder }
+                                        key={ mm }
+                                    >
+                                        <Link
+                                            to={ `${app}` !== "" ? `#${mm}` : `${yy}#${mm}` }
+                                        >
+                                            <h3 className={ Styles.monthTitle }>
+                                                { mm }
+                                            </h3>
+                                            <Img fileName="palette-icon.png" />
+                                        </Link>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                {/*** 2-2:月別ジャンプリスト -end- ***/}
+            {/****** 2:月別ジャンプエリア -end- ******/}
 
-                            /*--- コンテンツ単位のコンテナ ---*/
+            {/****** 3:画像コンテンツ表示エリア -start- ******/}
+                {// ループ1:月単位コンテナ作成
+                    config.map( months => {
+
+                        // ループ値を変数に格納
+                        var mm = months[0].month
+
+                        return (
                             <div
-                                className={ Styles.contentsContainer }
-                                key={ contents.fileName }
+                                className={ Styles.mainContainer }
+                                key={ mm }
                             >
-                                <Link
-                                    to={ `${ process.env.APP_NAME }` !== "" ? `${ process.env.APP_NAME }/images${ props.path }${ contents.month }/${ contents.fileName }` : `/images${ props.path }${ contents.month }/${ contents.fileName }` }
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
 
-                                    {/* 画像コンテンツ */}
-                                    <div className={ Styles.imageContents }>
-                                        <Img fileName={ contents.fileName } />
+                                {/*** 3-1:ヘッダーの固定によるid遷移のズレ対策スペーサー -start- ***/}
+                                    <div
+                                        className={ Styles.spacerForId }
+                                        id={ mm }
+                                    />
+                                {/*** 3-1:ヘッダーの固定によるid遷移のズレ対策スペーサー -end- ***/}
+
+                                {/*** 3-2:月別タイトル -start- ***/}
+                                    <h2 className="h2">
+                                        { mm }
+                                    </h2>
+                                {/*** 3-2:月別タイトル -end- ***/}
+
+                                {/*** 3-3:フレックスコンテナ -start- ***/}
+                                    <div
+                                        className={ `${ Styles.monthContainer } flex-pc flex-wrap` }
+                                        key={ mm }
+                                    >
+                                        {// ループ2:コンテンツ単位コンテナ作成
+                                            months.map( contents => {
+
+                                                // 2:ループ値を変数に格納(name_2)
+                                                var file = contents.fileName
+                                                var comment = contents.comment
+
+                                                return (
+                                                    <div
+                                                        className={ Styles.contentsContainer }
+                                                        key={ file }
+                                                    >
+                                                        <Link
+                                                            to={ `${app}` !== "" ? `${app}/images/${yy}/${mm}/${file}` : `/images/${yy}/${mm}/${file}` }
+                                                            target="_blank"
+                                                            rel="noreferrer"
+                                                        >
+
+                                                            {/* 3-3-1:画像コンテンツ -start- */}
+                                                                <div className={ Styles.imageContents }>
+                                                                    <Img fileName={ file } />
+                                                                </div>
+                                                            {/* 3-3-1:画像コンテンツ -end- */}
+
+                                                            {/* 3-3-2:テキストコンテンツ -start- */}
+                                                                <div className={ Styles.textContents }>
+                                                                    <p>
+                                                                        { comment }
+                                                                    </p>
+                                                                </div>
+                                                            {/* 3-3-2:テキストコンテンツ -end- */}
+
+                                                        </Link>
+                                                    </div>
+                                                )
+                                            })
+                                        }
                                     </div>
+                                {/*** 3-3:月単位のコンテナ -end- ***/}
 
-                                    {/*  テキストコンテンツ */}
-                                    <div className={ Styles.textContents }>
-                                        <p>
-                                            { contents.comment }
-                                        </p>
-                                    </div>
-
-                                </Link>
                             </div>
+                        )
+                    })
+                }
+            {/****** 3:画像コンテンツ表示エリア -end- ******/}
 
-                        )})
-                    }
-                </div>
+            {/****** 4:トップに戻るボタンエリア ******/}
+            <TopBtn
+                classTopBtn="top-btn"
+                getPathName ={ yy }
+            />
 
-            </div>
-
-        )})
-    }
-
-    <TopBtn
-        classTopBtn="top-btn"
-        getPathName ={ props.path }
-    />
-
-  </Layout>
-)
-
+        </Layout>
+    )
+}
