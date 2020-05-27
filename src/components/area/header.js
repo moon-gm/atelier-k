@@ -5,10 +5,7 @@ import Styles from "../../sass/module/area/header.module.scss"
 
 const Header = ({ siteTitle, classHeader, classHeaderFrame }) => (
     // 1:ヘッダーエリア
-    <header
-        className={ classHeader }
-        id="top"
-    >
+    <header className={ classHeader }>
         <div className={ classHeaderFrame }>
 
             {/* タイトルテキスト */}

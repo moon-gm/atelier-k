@@ -6,6 +6,7 @@ const Footer = ({ siteFooter, classFooter, classFooterFrame }) => (
   // 4:フッターエリア
   <footer className={ classFooter }>
     <div className={ classFooterFrame }>
+
       {/* テキスト */}
       <h1 className={ Styles.texts }>
           { siteFooter }

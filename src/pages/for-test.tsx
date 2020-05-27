@@ -83,6 +83,8 @@ const ForTest = (props: PageProps) => {
     <br></br>
     <p>[data.file.childImageSharp.fluid.src] => {data.file.childImageSharp.fluid.src}</p>
     <br></br>
+    <img src={data.file.childImageSharp.fluid.src}></img>
+    <br></br>
     <p>[data.file.childImageSharp.fluid.srcset] => {data.file.childImageSharp.fluid.srcset}</p>
     <br></br>
     <p>[data.file.childImageSharp.fluid.sizez] => {data.file.childImageSharp.fluid.sizes}</p>
