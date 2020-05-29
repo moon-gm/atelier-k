@@ -109,7 +109,7 @@ export default ( props ) => {
                                                         key={ file }
                                                     >
                                                         <Link
-                                                            to={ `${app}` !== "" ? `${app}/images/${yy}/${mm}/${file}` : `/images/${yy}/${mm}/${file}` }
+                                                            to={ `${app}` !== "" ? `${app}/images${yy}${mm}/${file}` : `/images${yy}${mm}/${file}` }
                                                             target="_blank"
                                                             rel="noreferrer"
                                                         >
