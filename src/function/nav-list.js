@@ -1,5 +1,5 @@
 import React from "react"
-import Config from "../config/config_nav-btn.js"
+// import Config from "../config/config_nav-btn.js"
 import Styles from "../sass/module/area/navigation.module.scss"
 
 // Galleryをタップした時の年代リスト表示処理
