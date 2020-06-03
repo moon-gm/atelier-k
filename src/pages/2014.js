@@ -15,7 +15,7 @@ const pageTitle ="Gallery 2014"
 export default ( props ) => {
 
     // 設定値定義
-    const yy = props.path
+    const yy = props.location.pathname
     const app = process.env.APP_NAME
     const jumpTitle ="Jump to"
 
